@@ -1,32 +1,119 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    
+   <div class="header" id="home">
+        <div class="namebox">
+          <div>
+ <a class="hero--text glow" href="https://github.com/broodercode">Chris</a>
+          </div>
+       
+
+        </div>
+          <div class="skills">
+    <p> HTML | CSS | JAVASCRIPT | ANGULAR | VUE | REACT | PYTHON | mySQL </p>
   </div>
+        </div>
+       <PanelView />
+      <DesignView />
+       <TwitchView />
+      
+  </div>
+  
+  
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import PanelView from '@/views/PanelView.vue'
+import TwitchView from '@/views/TwitchView.vue'
+import DesignView from '@/views/DesignView.vue'
+export default {
+  name: 'App',
+
+components: {
+  PanelView,
+  TwitchView,
+  DesignView
 }
+}
+</script>
 
-nav {
-  padding: 30px;
+<style lang="scss">
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+} 
+.skills{
+          position: absolute;
+          color: #f5f5f5;
+          left: 50%;
+          top:50%;
+          transform: translateX(-50%);
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+        }
+.header {
+    height: 95vh;
+    background-color: #080808;
+    .namebox{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 150px;
 
-    &.router-link-exact-active {
-      color: #42b983;
     }
-  }
+    
+    .hero { 
+  
+        &--text {
+          text-decoration: none;
+          
+           
+            font-family: 'Special Elite', cursive;
+            
+            &:hover {
+                animation: glow2 1s ease-in-out infinite alternate;
+                cursor: pointer;
+            }
+        }
+    
+        
+    }
+    
+    .glow {
+      padding-top: 10rem;
+      z-index: 1000;
+        font-size: 15rem;
+        color: #f5f5f5;
+        text-align: center;
+        -webkit-animation: glow1 1s ease-in-out infinite alternate;
+        -moz-animation: glow1 1s ease-in-out infinite alternate;
+        animation: glow1 1s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow1 {
+        from {
+          text-shadow: 0 0 0px #fff, 0 0 5px #fff, 0 0 10px #18a0d6, 0 0 20px #18a0d6, 0 0 25px #18a0d6;
+        }
+        
+        to {
+          text-shadow: 0 0 5px #fff, 0 0 10px #00b7ff, 0 0 15px #00b7ff, 0 0 20px #00b7ff, 0 0 25px #00b7ff;
+        }
+      }
+      @keyframes glow2 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #18a0d6, 0 0 40px #18a0d6, 0 0 50px #18a0d6, 0 0 60px #18a0d6, 0 0 70px #18a0d6;
+        }
+        
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 20px #00b7ff, 0 0 30px #00b7ff, 0 0 40px #00b7ff, 0 0 50px #00b7ff, 0 0 60px #00b7ff, 0 0 70px #00b7ff;
+        }
+      }
+
 }
 </style>
