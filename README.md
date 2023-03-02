@@ -1,19 +1,16 @@
-# portfolio
+# Project Title
 
-## Project setup
-```
-npm install
-```
+Chris Schiebelbein Personal Webpage
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Description
 
-### Compiles and minifies for production
-```
-npm run build
-```
+In Development
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Installing
+
+View at ChrisSchiebelbein.com
+
+## Authors
+
+Chris Schiebelbein
