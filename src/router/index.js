@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import AboutView from '../views/AboutView.vue'
+import AboutView from '../views/AboutView.vue';
 
 Vue.use(VueRouter);
 
@@ -21,6 +21,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  mode: 'history' 
 });
 
 export default router;

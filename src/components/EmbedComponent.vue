@@ -17,10 +17,11 @@
     data() {
       return {
         channel: 'broodvx',
-        width: '1660',
-        height: '900'
+        width: '300',
+        height: '250'
       };
     },
     // ...
   };
 </script>
+
