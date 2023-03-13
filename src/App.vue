@@ -1,38 +1,16 @@
 <template>
-  <div>
-    
-   <div class="header" id="home">
-        <div class="namebox">
-          <div>
- <a class="hero--text glow" href="https://github.com/broodercode">Chris</a>
-          </div>
-       
 
-        </div>
-          <div class="skills">
-    <p> HTML | CSS | JAVASCRIPT | ANGULAR | VUE | REACT | PYTHON | mySQL </p>
-  </div>
-        </div>
-       <PanelView />
-      <DesignView />
-       <TwitchView />
-      
-  </div>
-  
+  <router-view></router-view>
   
 </template>
 
 <script>
-import PanelView from '@/views/PanelView.vue'
-import TwitchView from '@/views/TwitchView.vue'
-import DesignView from '@/views/DesignView.vue'
+
 export default {
   name: 'App',
 
 components: {
-  PanelView,
-  TwitchView,
-  DesignView
+
 }
 }
 </script>

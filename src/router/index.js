@@ -16,7 +16,6 @@ const routes = [
     name: "about",
     component: AboutView
   },
-
 ];
 
 const router = new VueRouter({
