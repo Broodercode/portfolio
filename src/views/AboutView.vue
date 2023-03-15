@@ -43,7 +43,11 @@
 
           </b-card-body>
         </b-card>
-        <b-card header="Languages" title="Resume"> </b-card>
+        <b-card header="Languages" title="Projects">
+          <b-card-sub-title>UI/UX Design</b-card-sub-title>
+      
+           <img :src="require('../assets/projectfurn.png')" />
+           </b-card>
       </b-card-group>
     </b-container>
   </div>
