@@ -43,9 +43,10 @@
 
           </b-card-body>
         </b-card>
-        <b-card header="Languages" title="Projects">
-          <b-card-sub-title>UI/UX Design</b-card-sub-title>
-      
+        <b-card header="Projects and Languages" title="UI/UX Design">
+          <b-card-sub-title>Pizza Restaurant Website Project</b-card-sub-title>
+           <img :src="require('../assets/pizzaproject.png')" />
+          <b-card-sub-title>Manooth Design Project</b-card-sub-title>
            <img :src="require('../assets/projectfurn.png')" />
            </b-card>
       </b-card-group>
