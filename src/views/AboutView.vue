@@ -44,12 +44,43 @@
           </b-card-body>
         </b-card>
         <b-card header="Projects and Languages" title="UI/UX Design">
-          <b-card-sub-title>Pizza Restaurant Website Project</b-card-sub-title>
-           <img :src="require('../assets/pizzaproject.png')" />
-          <b-card-sub-title>Manooth Design Project</b-card-sub-title>
-           <img :src="require('../assets/projectfurn.png')" />
+        <b-row class="p-2 h-10" >
+
+      
+          <b-card-sub-title class="p-2">Pizza Restaurant Website Project</b-card-sub-title>
+           <b-img v-bind="mainProps"  :src="require('../assets/pizzaproject.png')" />
+             </b-row>
+             <b-row class="p-2 h-10">
+
+             
+          <b-card-sub-title class="p-2 ">Manooth Design Project</b-card-sub-title>
+           <b-img v-bind="mainProps" :src="require('../assets/projectfurn.png')"   />
+           </b-row>
+           <b-card-title>Technical Projects</b-card-title>
+           <b-row class="p-2 h-10">
+            
+          <b-card-sub-title>Gacha Droprate Website</b-card-sub-title>
+              <b-img v-bind="mainProps" :src="require('../assets/projectfurn.png')"   />
+              </b-row>
+           <b-row class="p-2 h-10">
+            
+          <b-card-sub-title>Gacha Droprate Website</b-card-sub-title>
+              <b-img v-bind="mainProps" :src="require('../assets/projectfurn.png')"   />
+              </b-row>
            </b-card>
       </b-card-group>
     </b-container>
   </div>
 </template>
+<script>
+  export default {
+    data() {
+      return {
+        mainProps: { 
+          
+          height: 100
+        }
+      }
+    }
+  }
+</script>
