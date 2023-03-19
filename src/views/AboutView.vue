@@ -44,28 +44,43 @@
           </b-card-body>
         </b-card>
         <b-card header="Projects and Languages" title="UI/UX Design">
-        <b-row class="p-2 h-10" >
-
+        <b-row class="p-2" >
+         
       
           <b-card-sub-title class="p-2">Pizza Restaurant Website Project</b-card-sub-title>
+           <b-col>
            <b-img v-bind="mainProps"  :src="require('../assets/pizzaproject.png')" />
+
+             <b-text class="p-2">Test</b-text>
+             </b-col>
              </b-row>
-             <b-row class="p-2 h-10">
+             <b-row class="p-2">
 
              
           <b-card-sub-title class="p-2 ">Manooth Design Project</b-card-sub-title>
+          <b-col>
            <b-img v-bind="mainProps" :src="require('../assets/projectfurn.png')"   />
+           </b-col>
            </b-row>
            <b-card-title>Technical Projects</b-card-title>
-           <b-row class="p-2 h-10">
+           <b-row class="p-2 ">
             
           <b-card-sub-title>Gacha Droprate Website</b-card-sub-title>
+          <b-col>
+
+        
               <b-img v-bind="mainProps" :src="require('../assets/projectfurn.png')"   />
+                </b-col>
               </b-row>
-           <b-row class="p-2 h-10">
+           <b-row class="p-2">
             
-          <b-card-sub-title>Gacha Droprate Website</b-card-sub-title>
+          <b-card-sub-title>Twitch Bot</b-card-sub-title>
+          <b-col>
+
+          
               <b-img v-bind="mainProps" :src="require('../assets/projectfurn.png')"   />
+              <b-text>Test</b-text>
+              </b-col>
               </b-row>
            </b-card>
       </b-card-group>
@@ -77,8 +92,13 @@
     data() {
       return {
         mainProps: { 
-          
-          height: 100
+          blank: true,
+          blankColor: "#ffbfec",
+          left: true,
+          width: 100,
+          height: 100,
+          thumbnail: true,
+          left: true
         }
       }
     }
