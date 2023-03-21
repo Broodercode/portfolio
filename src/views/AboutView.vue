@@ -130,6 +130,7 @@ export default {
       mainProps: {
         blankColor: "#ffbfec",
         height: "100%",
+        overflow: "hidden"
       },
     };
   },
