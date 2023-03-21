@@ -16,8 +16,6 @@
         <AboutView />
        <PanelView />
       <DesignView />
-       <TwitchView />
-      
   </div>
 </template>
 
