@@ -1,3 +1,5 @@
+import 
+
 <template>
   <div class="about">
     <b-container fluid>
@@ -44,45 +46,45 @@
               2022</b-card-sub-title
             >
           </b-card-body>
+            <CardComponent class="pt-2"
+  title='Pizza Restaurant Website Project' 
+  summary='Loem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui turpis, porta a efficitur eu, ullamcorper eunisi. In nulla elit, gravida et cursus eu, tempor vitae arcu.'
+  features='Aenean lobortis neque dolor, non faucibus quam accumsan non. Integer quis nulla vitae ante placerat malesuada. Donec egetultrices urna, semper cursus nulla. Pellentesque tempor lacus idarcu sagittis, eu consectetur lectus sagittis.'
+  lessons='Etiam eu molestie sem. Nullam fermentum massa vel augue tempor, id tincidunt nequevarius. Ut euismod accumsan ligula. Aliquam erat volutpat. Namnec erat ac dui sagittis fermentum. Nunc dictum sollicitudinrutrum'
+  
+   />
+  <CardComponent class="pt-2"
+  title='Pizza Restaurant Website Project' 
+  summary='Loem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui turpis, porta a efficitur eu, ullamcorper eunisi. In nulla elit, gravida et cursus eu, tempor vitae arcu.'
+  features='Aenean lobortis neque dolor, non faucibus quam accumsan non. Integer quis nulla vitae ante placerat malesuada. Donec egetultrices urna, semper cursus nulla. Pellentesque tempor lacus idarcu sagittis, eu consectetur lectus sagittis.'
+  lessons='Etiam eu molestie sem. Nullam fermentum massa vel augue tempor, id tincidunt nequevarius. Ut euismod accumsan ligula. Aliquam erat volutpat. Namnec erat ac dui sagittis fermentum. Nunc dictum sollicitudinrutrum'
+  
+   />
         </b-card>
         <b-card header="Projects and Languages" title="UI/UX Design">
         <card-group decked></card-group>
-          <b-card bg-variant="dark" text-variant="white"  no-body class="overflow-hidden">
-            <b-row no-gutters>
-              <b-col md="6">
-
-              <b-card-img
-                v-bind="mainProps"
-                :src="require('../assets/pizzaproject.png')"
-              />
-</b-col>
-<b-col md="6">
-  <b-card-body title="Pizza Restaurant Website Project">
-
-  <b-card-sub-title >Summary</b-card-sub-title>
-              <b-text class="p-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum dui turpis, porta a efficitur eu, ullamcorper eu
-                nisi. In nulla elit, gravida et cursus eu, tempor vitae arcu.
-                 </b-text>
-                 <b-card-sub-title class="p-2">Key Features</b-card-sub-title>
-                 <b-text>
-                Aenean lobortis neque dolor, non faucibus quam accumsan non.
-                Integer quis nulla vitae ante placerat malesuada. Donec eget
-                ultrices urna, semper cursus nulla. Pellentesque tempor lacus id
-                arcu sagittis, eu consectetur lectus sagittis. 
-                
-                <b-card-sub-title class="p-2">Lessons Learned</b-card-sub-title>
-                Etiam eu molestie sem. Nullam fermentum massa vel augue tempor, id tincidunt neque
-                varius. Ut euismod accumsan ligula. Aliquam erat volutpat. Nam
-                nec erat ac dui sagittis fermentum. Nunc dictum sollicitudin
-                rutrum.
-             </b-text>
-                </b-card-body>
-              </b-col>
-            </b-row>
-          </b-card>
-
+  <CardComponent class="pt-2"
+  title='Pizza Restaurant Website Project' 
+  summary='Loem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui turpis, porta a efficitur eu, ullamcorper eunisi. In nulla elit, gravida et cursus eu, tempor vitae arcu.'
+  features='Aenean lobortis neque dolor, non faucibus quam accumsan non. Integer quis nulla vitae ante placerat malesuada. Donec egetultrices urna, semper cursus nulla. Pellentesque tempor lacus idarcu sagittis, eu consectetur lectus sagittis.'
+  lessons='Etiam eu molestie sem. Nullam fermentum massa vel augue tempor, id tincidunt nequevarius. Ut euismod accumsan ligula. Aliquam erat volutpat. Namnec erat ac dui sagittis fermentum. Nunc dictum sollicitudinrutrum'
+  
+   />
+  <CardComponent class="pt-2"
+  title='Pizza Restaurant Website Project' 
+  summary='Loem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui turpis, porta a efficitur eu, ullamcorper eunisi. In nulla elit, gravida et cursus eu, tempor vitae arcu.'
+  features='Aenean lobortis neque dolor, non faucibus quam accumsan non. Integer quis nulla vitae ante placerat malesuada. Donec egetultrices urna, semper cursus nulla. Pellentesque tempor lacus idarcu sagittis, eu consectetur lectus sagittis.'
+  lessons='Etiam eu molestie sem. Nullam fermentum massa vel augue tempor, id tincidunt nequevarius. Ut euismod accumsan ligula. Aliquam erat volutpat. Namnec erat ac dui sagittis fermentum. Nunc dictum sollicitudinrutrum'
+  
+   />
+  <CardComponent class="pt-2"
+  title='Pizza Restaurant Website Project' 
+  summary='Loem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dui turpis, porta a efficitur eu, ullamcorper eunisi. In nulla elit, gravida et cursus eu, tempor vitae arcu.'
+  features='Aenean lobortis neque dolor, non faucibus quam accumsan non. Integer quis nulla vitae ante placerat malesuada. Donec egetultrices urna, semper cursus nulla. Pellentesque tempor lacus idarcu sagittis, eu consectetur lectus sagittis.'
+  lessons='Etiam eu molestie sem. Nullam fermentum massa vel augue tempor, id tincidunt nequevarius. Ut euismod accumsan ligula. Aliquam erat volutpat. Namnec erat ac dui sagittis fermentum. Nunc dictum sollicitudinrutrum'
+  
+   />
+  
           <b-row class="p-2">
             <b-card-sub-title class="p-2"
               >Manooth Design Project</b-card-sub-title
@@ -124,7 +126,11 @@
   </div>
 </template>
 <script>
+import CardComponent from '@/components/CardComponent.vue'
 export default {
+  components: {
+CardComponent
+  },
   data() {
     return {
       mainProps: {
