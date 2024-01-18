@@ -15,6 +15,7 @@
     <!-- <AboutView /> -->
     <PanelView />
     <DesignView />
+    <BroadcastView />
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import PanelView from "@/views/PanelView.vue";
 import TwitchView from "@/views/TwitchView.vue";
 import DesignView from "@/views/DesignView.vue";
 import AboutView from "./AboutView.vue";
+import BroadcastView from "./BroadcastView.vue";
 
 export default {
   name: "HomeView",
@@ -31,6 +33,27 @@ export default {
     TwitchView,
     DesignView,
     AboutView,
+    BroadcastView,
   },
 };
 </script>
+<style scoped>
+@media (max-width: 768px) {
+  .header {
+    /* Apply responsive styles for header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .namebox {
+    /* Apply responsive styles for namebox */
+    margin-bottom: 10px;
+  }
+
+  .skills {
+    /* Apply responsive styles for skills */
+    font-size: 14px;
+  }
+}
+</style>
