@@ -1,3 +1,5 @@
+
+
 <template>
     <div class="container" :style="containerStyle" @mouseover="isHovered = true" @mouseout="isHovered = false">
         <video v-if="videoAvailable" width="100%" height="100%" :autoplay="isHovered" :controls="false">
@@ -13,7 +15,7 @@ export default {
     name: "BroadcastView",
     data() {
         return {
-            videoAvailable: false,
+            videoAvailable: true,
             isHovered: false,
         };
     },
@@ -30,12 +32,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container {
     max-width: 100vw;
     max-height: 56.25vw; /* 16:9 aspect ratio (100vw * 9 / 16) */
     margin: 0 auto;
     transition: background-color 0.3s ease;
+    overflow:hidden;
 }
 
 .container:hover {

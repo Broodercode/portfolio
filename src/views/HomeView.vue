@@ -1,21 +1,11 @@
 <template>
-  <div>
-    <div class="header" id="home">
-      <div class="namebox">
-        <div>
-          <a class="hero--text glow" href="https://github.com/broodercode"
-            >Chris</a
-          >
-        </div>
-      </div>
-      <div class="skills">
-        <p>HTML | CSS | JAVASCRIPT | ANGULAR | VUE | REACT | PYTHON | mySQL</p>
-      </div>
-    </div>
+  <div id="home">
+    <HeroView />
     <!-- <AboutView /> -->
     <PanelView />
-    <DesignView />
     <BroadcastView />
+    <DesignView />
+    <ProgrammingView />
   </div>
 </template>
 
@@ -25,35 +15,19 @@ import TwitchView from "@/views/TwitchView.vue";
 import DesignView from "@/views/DesignView.vue";
 import AboutView from "./AboutView.vue";
 import BroadcastView from "./BroadcastView.vue";
+import HeroView from "./HeroView.vue";
+import ProgrammingView from "./ProgrammingView.vue";
 
 export default {
   name: "HomeView",
   components: {
+    HeroView,
     PanelView,
     TwitchView,
     DesignView,
     AboutView,
     BroadcastView,
+    ProgrammingView,
   },
 };
 </script>
-<style scoped>
-@media (max-width: 768px) {
-  .header {
-    /* Apply responsive styles for header */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .namebox {
-    /* Apply responsive styles for namebox */
-    margin-bottom: 10px;
-  }
-
-  .skills {
-    /* Apply responsive styles for skills */
-    font-size: 14px;
-  }
-}
-</style>
