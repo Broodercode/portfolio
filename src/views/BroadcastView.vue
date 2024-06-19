@@ -1,6 +1,7 @@
 
 
 <template>
+    <b-container>
     <div class="container" :style="containerStyle" @mouseover="isHovered = true" @mouseout="isHovered = false">
         <video v-if="videoAvailable" width="100%" height="100%" :autoplay="isHovered" :controls="false">
             <source src="path/to/video.mp4" type="video/mp4">
@@ -8,6 +9,7 @@
         </video>
         <button class="audio-button" v-show="isHovered">Audio</button>
     </div>
+</b-container>
 </template>
 
 <script>
@@ -36,7 +38,7 @@ export default {
 .container {
     max-width: 100vw;
     max-height: 56.25vw; /* 16:9 aspect ratio (100vw * 9 / 16) */
-    margin: 0 auto;
+    margin: 0;
     transition: background-color 0.3s ease;
     overflow:hidden;
 }

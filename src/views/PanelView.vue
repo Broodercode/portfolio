@@ -117,6 +117,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 .card {
   // FUNCTIONALITY
   perspective: 150rem;

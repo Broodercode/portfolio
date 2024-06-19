@@ -4,27 +4,27 @@
             <b-row>
                 <b-col sm="12" md="4" class="column-one">
                     <div class="focus">
-                    <h2 class="column-title">Pizza Website</h2>
-                    <div class="shader">
-                    <div class="pizza-image"></div>
-                </div>
-                </div>
+                        <h2 class="column-title">Pizza Website</h2>
+                        <div class="shader">
+                            <div class="pizza-image"></div>
+                        </div>
+                    </div>
                 </b-col>
-                <b-col sm="12" md="4" class="column-two" >
+                <b-col sm="12" md="4" class="column-two">
                     <div class="focus">
-                    <h2 class="column-title">Furniture Store Design</h2>
-                    <div class="shader">
-                    <div class="pizza-image"></div>
-                </div>
-                </div>
+                        <h2 class="column-title">Furniture Store Design</h2>
+                        <div class="shader">
+                            <div class="pizza-image"></div>
+                        </div>
+                    </div>
                 </b-col>
                 <b-col sm="12" md="4" class="column-three">
-                         <div class="focus">
-                    <h2 class="column-title">Art</h2>
-                    <div class="shader">
-                    <div class="pizza-image"></div>
-                </div>
-                </div>
+                    <div class="focus">
+                        <h2 class="column-title">Art</h2>
+                        <div class="shader">
+                            <div class="pizza-image"></div>
+                        </div>
+                    </div>
                 </b-col>
             </b-row>
         </b-container>
@@ -42,8 +42,6 @@ export default {
     background-color: #0f0f0f; /* Light Gray */
     z-index: 0;
     position: relative;
-    display: block;
-    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -51,8 +49,8 @@ export default {
     position: relative;
     height: 100%;
     width: 100% ;
+    overflow: hidden;
     &:hover {
-        z-index: 1;
         transform: scale(1.1);
         .shader {
             opacity: 1;
@@ -61,10 +59,19 @@ export default {
     }
     transition: ease-in-out 0.3s;
 }
-.column-one, .column-two, .column-three {
-    min-height: 150vh; 
-    transform: translateY(-25%) rotate(22.5deg); 
 
+.shader {
+    background-color: #010101;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    z-index: 10; // Increase this value
+}
+.column-one, .column-two, .column-three {
+    min-height: 150vh;
+    transform: translateY(-25%) rotate(22.5deg); 
+    
     &:hover {
         transform: translateY(-25%) rotate(22.5deg) scale(1.1);
         z-index: 1;
@@ -88,17 +95,9 @@ export default {
 
 .pizza-image {
     background-image: url(../assets/pizzaproject02.png);
-    width: 100%;
+    width: 97%;
     height: 100%;
     background-position: center;
-
-}
-.shader {
-    background-color: #010101;
-    opacity: 0.4;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 
 }
 .column-title {
