@@ -123,30 +123,21 @@ body {
   transition: color 0.5s;
 
   &:hover {
-    background: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    );
-    background-size: 400%;
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow-hover 2s linear infinite alternate;
+    animation: rainbow 10s linear infinite;
   }
 }
 
-@keyframes rainbow-hover {
+@keyframes rainbow {
   0% {
     background-position: 0% 50%;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 200% 50%;
   }
 }
 </style>

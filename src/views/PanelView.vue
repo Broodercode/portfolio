@@ -40,7 +40,7 @@
             >
               <div class="card__cta">
                 <img :src="require('../assets/github256.png')" />
-                <h2 class="card__heading-span">Github</h2>
+                <h2 class="card__heading-span">Programming</h2>
               </div>
             </div>
             <div class="card__side card__side--front">
