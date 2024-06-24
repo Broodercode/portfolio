@@ -27,12 +27,12 @@ export default {
     data() {
         return {
             buttons: [
-                { id: 1, label: 'Button 1', tooltip: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-                { id: 2, label: 'Button 2', tooltip: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' },
-                { id: 3, label: 'Button 3', tooltip: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.' },
-                { id: 4, label: 'Button 4', tooltip: 'Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-                { id: 5, label: 'Button 5', tooltip: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.' },
-                { id: 6, label: 'Button 6', tooltip: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.' },
+                { id: 1, label: 'Twitchbot', tooltip: 'My Twitch bot.  It reads chat and plays audio effects back. It can connect to a database and perform "live checks" as well.' },
+                { id: 2, label: 'Drop Rate Calculator', tooltip: 'At one point I was very into Gacha games. Naturally effective planning is important, so I made an application that calculates the odds of drawing a given card over X money spent.' },
+                { id: 3, label: 'Time Save Finder', tooltip: 'Speedrunning also requires strategy.  This application will compare times and give you a response as to which is faster. Lots of conversions going on.' },
+                { id: 4, label: 'Bot Backend', tooltip: 'The backend for my Twitch bot!  It records various message data and stores it in a database.' },
+                { id: 5, label: 'Foodie API', tooltip: 'A class project in which I connected, sent, and recieved data from an API!' },
+                { id: 6, label: 'Foodie Project', tooltip: 'Final Project for Vue class.' },
             ],
             showTooltip: null,
         };
