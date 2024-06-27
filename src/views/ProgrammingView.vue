@@ -6,7 +6,7 @@
                 <button
                     v-for="button in buttons"
                     :key="button.id"
-                    class="rounded-button"
+                    :class="['rounded-button', `rounded-button-${button.id}`]"
                     :title="button.tooltip"
                     @mouseover="showTooltip = button.id"
                     @mouseleave="showTooltip = null"
@@ -56,12 +56,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .background {
     width: 100vw;
     height: 100vh;
-    background-color: #ff01ff; /* Replace with your desired bright color */
-    top: -5vh;
+    background-color: #1f1f1f; /* Replace with your desired bright color */
     position: relative;
 }
 
@@ -85,10 +84,47 @@ export default {
     width: 150px; /* Adjust the width as needed */
     height: 150px; /* Adjust the height as needed */
     border-radius: 10px;
+    
+        
     background-color: #ffffff; /* Replace with your desired button color */
-    color: #000000; /* Replace with your desired button text color */
+    color: #f1f1f1; /* Replace with your desired button text color */
+    text-shadow: -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black,
+    -2px  0   0 black,
+     2px  0   0 black,
+     0   -2px 0 black,
+     0    2px 0 black;
+    font-weight: bolder;
     font-size: 16px;
     position: relative;
+    background-size: cover;
+   
+}
+
+.rounded-button-1 {
+    background-image: url(../assets/broodPogWeb.webp);
+}
+.rounded-button-2 {
+    background-image: url(../assets/broodFish.webp);
+    background-color: #77DD77;
+}
+.rounded-button-3 {
+    background-image: url(../assets/broodRace.png);
+    background-color: #77DD77;
+}
+.rounded-button-4 {
+    background-image: url(../assets/broodPogWeb.webp);
+    background-color: #77DD77;
+}
+.rounded-button-5 {
+    background-image: url(../assets/broodPhone.webp);
+    background-color: #77DD77;
+}
+.rounded-button-6 {
+    background-image: url(../assets/broodPlateEat.webp);
+    background-color: #77DD77;
 }
 
 .rounded-button:hover {
